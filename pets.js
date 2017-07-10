@@ -1,6 +1,5 @@
 // reference array for the objects I'm storing as boolean, more efficent for a database
-var traitsList = ["orange", "white", "gray", "black", "fiesty", "cuddly",
-"playful", "shy"];
+var traitsList = ["orange", "white", "gray", "black", "fiesty", "cuddly", "playful", "shy"];
 
 // object prototype
 function pet(name, traits) {
@@ -136,7 +135,7 @@ if (trimmedPath === "selection"){
 if (trimmedPath === "results"){
   elresults = document.getElementById("resultsText");
   var resultsText = "Well,  this how you match with these cats from your selctions.";
-  resultsText = parseMessage(resultsText, 5);
+  resultsText = parseMessage(resultsText, 6);
   elresults.innerHTML += resultsText;
   var returningMatches = localStorage.getItem("matches");
   // set the percentage bars for each cat
