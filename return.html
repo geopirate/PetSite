@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="George Gaylor Jr" />
+  <title>My Cat Selector App</title>
+  <link rel="stylesheet" type="text/css" href="mystyle.css">
+</head>
+<body>
+  <header>
+    <div class="links-div headers">
+      <ul>
+        <li>
+          <a href="index.html" class="button-link" id="indexLink">Home</a>
+        </li>
+        <li>
+          <a href="about.html" class="button-link" id="aboutLink">About</a>
+        </li>
+        <li>
+          <a href="selection.html" class="button-link" id="selectionLink">Select</a>
+        </li>
+        <li>
+          <a href="results.html" class="button-link" id="resultsLink">Results</a>
+        </li>
+      </ul>
+    </div>
+    <div class="title-div headers">
+      <h1>Cat Selector App</h1>
+    </div>
+    <div class="social-div headers">
+      <ul>
+        <li>
+          <a href="https://linkedin.com/in/georgegaylorjr">
+            <img src="img/In-2CRev-128px-R.png" alt="Check me out on LinkedIn">
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/geopirate">
+            <img src="img/Octocat.png" alt="Check me out on Github">
+          </a>
+        </li>
+        <li>
+          <a href="about.html">
+            <img src="img/carrotface.png" alt="My orange cat Carrot's face">
+          </a>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+  <section class="content">
+    <h2 id=helperText></h2><br><br>
+    <form name="form" id="form" action="selection.html" onsubmit="return validateForm()">
+      <p>You can enter a new name here or <br>enter no name and continue <br>with your current one:</p>
+      <input type="text" name="userName" id="userName" maxlength="32"/><br><br>
+      <input type="submit" id="submitButton" value="Make new selections" class="button-link">
+  </form>
+</section>
+
+  <footer>
+    <p>This app is to figure out what cat you like the most based on your preferences.
+      &copy; George Gaylor Jr</p>
+  </footer>
+  <script src="pets.js"></script>
+</body>
+</html>

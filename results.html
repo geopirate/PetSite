@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="George Gaylor Jr" />
+  <title>My Cat Selector App</title>
+  <link rel="stylesheet" type="text/css" href="mystyle.css">
+</head>
+<body>
+  <header>
+    <div class="links-div headers">
+      <ul>
+        <li>
+          <a href="index.html" class="button-link" id="indexLink">Home</a>
+        </li>
+        <li>
+          <a href="about.html" class="button-link" id="aboutLink">About</a>
+        </li>
+        <li>
+          <a href="selection.html" class="button-link" id="selectionLink">Select</a>
+        </li>
+        <li>
+          <a href="results.html" class="button-link" id="resultsLink">Results</a>
+        </li>
+      </ul>
+    </div>
+    <div class="title-div headers">
+      <h1>Cat Selector App</h1>
+    </div>
+    <div class="social-div headers">
+      <ul>
+        <li>
+          <a href="https://linkedin.com/in/georgegaylorjr">
+            <img src="img/In-2CRev-128px-R.png" alt="Check me out on LinkedIn">
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/geopirate">
+            <img src="img/Octocat.png" alt="Check me out on Github">
+          </a>
+        </li>
+        <li>
+          <a href="about.html">
+            <img src="img/carrotface.png" alt="My orange cat Carrot's face">
+          </a>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+  <section class="content">
+    <div class="flex-row">
+    <article class="catbox">
+      <img src="img/carrot.jpg" class="results">
+      <div class="progress"><div class="bar" id="bar0"></div></div>
+      <div class="cattext" id="text0">Carrot</div>
+    </article>
+    <article class="catbox">
+      <img src="img/turnip.jpg" class="results">
+      <div class="progress"><div class="bar" id="bar1"></div></div>
+      <div class="cattext"id="text1">Turnip</div>
+    </article>
+  </div>
+  <div class="flex-row">
+    <article class="catbox">
+      <img src="img/radish.jpg" class="results">
+      <div class="progress"><div class="bar" id="bar2"></div></div>
+      <div class="cattext" id="text2">Radish</div>
+    </article>
+    <article class="catbox">
+      <img src="img/sylar.jpg" class="results">
+      <div class="progress"><div class="bar" id="bar3"></div></div>
+      <div class="cattext" id="text3">Sylar</div>
+    </article>
+  </div>
+    <h2 id=resultsText></h2>
+  </section>
+
+  <footer>
+    <p>This app is to figure out what cat you like the most based on your preferences.
+       &copy; George Gaylor Jr</p>
+  </footer>
+  <script src="pets.js"></script>
+</body>
+</html>

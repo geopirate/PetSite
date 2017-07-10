@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="George Gaylor Jr" />
+  <title>My Cat Selector App</title>
+  <link rel="stylesheet" type="text/css" href="mystyle.css">
+</head>
+<body>
+  <header>
+    <div class="links-div headers">
+      <ul>
+        <li>
+          <a href="index.html" class="button-link" id="indexLink">Home</a>
+        </li>
+        <li>
+          <a href="about.html" class="button-link" id="aboutLink">About</a>
+        </li>
+        <li>
+          <a href="selection.html" class="button-link" id="selectionLink">Select</a>
+        </li>
+        <li>
+          <a href="results.html" class="button-link" id="resultsLink">Results</a>
+        </li>
+      </ul>
+    </div>
+    <div class="title-div headers">
+      <h1>Cat Selector App</h1>
+    </div>
+    <div class="social-div headers">
+      <ul>
+        <li>
+          <a href="https://linkedin.com/in/georgegaylorjr">
+            <img src="img/In-2CRev-128px-R.png" alt="Check me out on LinkedIn">
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/geopirate">
+            <img src="img/Octocat.png" alt="Check me out on Github">
+          </a>
+        </li>
+        <li>
+          <a href="about.html">
+            <img src="img/carrotface.png" alt="My orange cat Carrot's face">
+          </a>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+  <section class="content">
+      <h2 id=helperText></h2>
+    <p>Colors</p>
+    <div>
+      <button type="button" onclick="toggle(this)" class="unchecked" id=orange>Orange</button>
+      <button type="button" onclick="toggle(this)" class="unchecked" id="white"/>White</button>
+      <button type="button" onclick="toggle(this)" class="unchecked" id="gray"/>Gray</button>
+      <button type="button" onclick="toggle(this)" class="unchecked" id="black"/>Black</button>
+    </div>
+    <p>Personality</p>
+    <div>
+      <button type="button" onclick="toggle(this)" class="unchecked" id="fiesty"/>Fiesty</button>
+      <button type="button" onclick="toggle(this)" class="unchecked" id="cuddly"/>Cuddly</button>
+      <button type="button" onclick="toggle(this)" class="unchecked" id="playful"/>Playful</button>
+      <button type="button" onclick="toggle(this)" class="unchecked" id="shy"/>Shy</button>
+    </div>
+    <div>
+
+      <form class="form" name="form" id="entryForm" action="results.html">
+        <input type="checkbox" id="orangeCheck" class="hidden" name="orange" unchecked/></input>
+        <input type="checkbox" id="whiteCheck" class="hidden" name="white" unchecked/></input>
+        <input type="checkbox" id="grayCheck" class="hidden" name="gray" unchecked/></input>
+        <input type="checkbox" id="blackCheck" class="hidden" name="black" unchecked/></input>
+        <input type="checkbox" id="fiestyCheck" class="hidden" name="fiesty" unchecked/></input>
+        <input type="checkbox" id="cuddlyCheck" class="hidden" name="cuddly" unchecked/></input>
+        <input type="checkbox" id="playfulCheck" class="hidden" name="playful" unchecked/></input>
+        <input type="checkbox" id="shyCheck" class="hidden" name="shy" unchecked/></input>
+        <input type="submit" id="submitButton" value="See Results" class="button-link"></input>
+      </form>
+    </div>
+    <ul>
+      <li><label class="hidden" for="orangeCheck" id="orangeLabel">Orange</label></li>
+      <li><label class="hidden" for="whiteCheck" id="whiteLabel">White</label></li>
+      <li><label class="hidden" for="grayCheck" id="grayLabel">Gray</label></li>
+      <li><label class="hidden" for="blackCheck" id="blackLabel">Black</label></li>
+      <li><label class="hidden" for="fiestyCheck" id="fiestyLabel">Fiesty</label></li>
+      <li><label class="hidden" for="cuddlyCheck" id="cuddlyLabel">Cuddly</label></li>
+      <li><label class="hidden" for="playfulCheck" id="playfulLabel">Playful</label></li>
+      <li><label class="hidden" for="shyCheck" id="shyLabel">Shy</label></li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>This app is to figure out what cat you like the most based on your preferences.
+      &copy; George Gaylor Jr</p>
+  </footer>
+  <script src="pets.js"></script>
+</body>
+</html>
