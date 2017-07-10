@@ -59,7 +59,9 @@ if (trimmedPath === "return") {
   /* Array.max = function( array ){
       return Math.max.apply( Math, array );
     };*/
-} else {
+} else if (trimmedPath === ""){
+  location.replace("index.html");
+}else {
   // set the button background to a different blue for the current page
   document.getElementById(trimmedPath + "Link").style.background = "#0077b5";
 }
